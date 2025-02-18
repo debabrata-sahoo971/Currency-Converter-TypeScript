@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typescript Link</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Currency Converter</h1>
+        
+        <div class="input-group">
+            <label for="amount">Enter Amount</label>
+            <input type="number" id="amount" class="amount-input" placeholder="100" required>
+        </div>
+        
+        <div class="currency-row">
+            <select id="fromCurrency" class="currency-select"></select>
+            <span class="to-text">TO</span>
+            <select id="toCurrency" class="currency-select"></select>
+        </div>
+        
+        <button class="convert-btn">Convert</button>
+        
+        <div id="loading" class="loading">Converting...</div>
+        <div id="result" class="result"></div>
+        <div id="error" class="error"></div>
+        <div id="updateTime" class="update-time"></div>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
